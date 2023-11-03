@@ -93,11 +93,7 @@ public class MainClass {
 					System.out.print(" ");
 				}
 				System.out.println("\n");
-			}
-			
-			
-			
-			
+			}	
 	}
 
 }
