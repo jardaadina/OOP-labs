@@ -25,10 +25,11 @@ public class MainClass {
 			{
 				System.out.println(arr[i]);
 			}
-			//for(int element:arr)
-			//{
-			//	System.out.println(element);
-			//}
+			for(int element:arr)
+			{
+				System.out.println(element);
+			}
+			/*
 			int aux;
 			int i=0;
 			int j=arr.length-1;
@@ -93,7 +94,7 @@ public class MainClass {
 					System.out.print(" ");
 				}
 				System.out.println("\n");
-			}	
+			}	*/
 	}
 
 }

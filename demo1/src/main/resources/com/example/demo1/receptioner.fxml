@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B8E2F2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Receptioner">
+    <children>
+        <Button fx:id="inapoiButton" layoutX="444.0" layoutY="330.0" mnemonicParsing="false" onAction="#inapoiButtonOnAction" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #003366;" text="Inapoi" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="BGAO" layoutX="406.0" layoutY="51.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="180.0" style="-fx-background-color: #003366;" text="Gestiunea activitatilor operationale  " textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="BOFC" layoutX="217.0" layoutY="51.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="180.0" style="-fx-background-color: #003366;" text="Operatii financiar contabile" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="BGRU" layoutX="25.0" layoutY="51.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="180.0" style="-fx-background-color: #003366;" text="Gestiunea resurselor umane  " textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <Button fx:id="BGRUDPR" layoutX="40.0" layoutY="149.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #003366;" text="Date Personale" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BGRUMDPR" layoutX="40.0" layoutY="219.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #003366;" text="Modificare Date Personale" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BGRUCR" layoutX="40.0" layoutY="286.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #003366;" text="Concediu" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BOFCVSR" layoutX="228.0" layoutY="149.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #003366;" text="Vizualizare Salariu" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BGAOCPR" layoutX="424.0" layoutY="149.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #003366;" text="Confirmare Programare" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BGAOEBFR" layoutX="424.0" layoutY="219.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #003366;" text="Emitere Bon Fiscal" textAlignment="CENTER" textFill="#fcf7f7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

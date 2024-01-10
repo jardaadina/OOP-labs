@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 public class Xsi0view extends JFrame
 {
-    //declar o matrice de tipul JButton pe care o nuimesc butoane
+    //declar o matrice de tipul JButton pe care o numesc butoane
     private JButton[][] butoane;
 
     //constructorul clasei view
@@ -30,11 +30,12 @@ public class Xsi0view extends JFrame
                 butoane[i][j]=new JButton();//creez butoanele
                 butoane[i][j].setBorder(BorderFactory.createLineBorder(Color.WHITE, 2));
                 butoane[i][j].setFont(new Font("TIMES NEW ROMAN", Font.PLAIN, 80));//ii zic ce font si ce marime are
+                //butoane[i][j].setForeground(Color.BLACK);
                 butoane[i][j].setEnabled(false);//il activez
                 add(butoane[i][j]);//adaug butoanele
             }
         }
-        //dau back la tot ce am facut pana acum
+        //dau pack la tot ce am facut pana acum
         pack();
         //si este ideal dupa pack sa dau setVisible ca sa imi apara fereastra
         setVisible(true);
@@ -47,7 +48,9 @@ public class Xsi0view extends JFrame
 
     void setCuloareSimboluri(int row, int col, char simbol) {
         Color culoareSimbol = (simbol == 'X') ? Color.BLACK : Color.BLACK;
-        butoane[row][col].setBackground(culoareSimbol);
+
+        butoane[row][col].setForeground(culoareSimbol);
+        //butoane[row][col].setBackground(Color.white);
     }
 
     //fac o metoda care sa imi puna text pe fiecare buton, text adica X sau 0

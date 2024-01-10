@@ -10,14 +10,14 @@ public class MainClass {
 		System.out.println("adv");
 		else
 		System.out.println("fals");*/
-		/*
+		
 		//problema4.4
 		String str1="Ana are ";
 		String str2="mere";
 		String str3=str1+str2;
-		//System.out.println(str3=="Ana are mere");
-		System.out.println(str3.equals("Ana are mere"));//mere cand comparam doua string uri folosim equals
-		*/
+		System.out.println(str3=="Ana are mere");
+		System.out.println(str3.equals("Ana are mere"));//mereu cand comparam doua string uri folosim equals
+		
 		
 		/*
 		//problema4.2
@@ -46,6 +46,7 @@ public class MainClass {
 			
 		}
 		*/
+		
 		//problema4.3
 		String str="Maria";
 		int c=0, v=0;

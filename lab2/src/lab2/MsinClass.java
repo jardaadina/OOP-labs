@@ -8,7 +8,7 @@ public class MsinClass {
 		Scanner input = new Scanner(System.in);
 		int inputValue = input.nextInt();
 
-//		System.out.println("valoarea citita de la tastatura este " +inputValue);
+		System.out.println("valoarea citita de la tastatura este " + inputValue);
 
 		int maxInt = Integer.MAX_VALUE;
 		System.out.println(maxInt + 1);

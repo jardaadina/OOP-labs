@@ -17,15 +17,22 @@ public class Xsi0Controller
         initializareJoc();
     }
 
+    //initializez Jocul
     private void initializareJoc()
     {
+        //parcurg fiecare linie si coloana
         for(int i=0; i<3; i++)
         {
             for(int j=0; j<3; j++)
             {
-            view.setCuloare(i, j, Color.BLACK);
+            //setez culoarea background-ului
+            view.setCuloare(i, j, Color.PINK);
+            //dar si culoarea textului
             view.setText(i, j, model.getTablaJoc()[i][j]);
+            //activez butoanele
             view.setButonActiv(i, j, true);
+            view.setCuloareSimboluri(i, j, 'X');
+            view.setCuloareSimboluri(i, j, '0');
 
             int initI=i;
             int initJ=j;
@@ -38,7 +45,7 @@ public class Xsi0Controller
             });
             }
         }
-        view.setSize(400, 400);
+        view.setSize(600, 600);
     }
 
     private void CLickCelula(int row, int col)
@@ -68,6 +75,7 @@ public class Xsi0Controller
         }
     }
 
+    //actualizam tabela
     private void updateView()
     {
         char[][] tablaJoc= model.getTablaJoc();
@@ -75,9 +83,10 @@ public class Xsi0Controller
         {
             for (int j = 0; j < 3; j++)
             {
+                //in functie de ce avem in fiecare celula a tabelei activam sau dezactivam butoanele
                 view.setText(i, j, tablaJoc[i][j]);
                 view.setButonActiv(i, j, tablaJoc[i][j] == ' ');
-                //view.setCuloareSimboluri(i, j, tablaJoc[i][j]);
+                view.setCuloareSimboluri(i, j, tablaJoc[i][j]);
             }
         }
     }
@@ -97,11 +106,11 @@ public class Xsi0Controller
     {
         if(castigator == 'X')
         {
-            JOptionPane.showMessageDialog(view, "X a acstigat", " GAME OVER", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(view, "X a castigat", " GAME OVER", JOptionPane.INFORMATION_MESSAGE);
         }
         else if(castigator == '0')
         {
-            JOptionPane.showMessageDialog(view, "0 a acstigat", " GAME OVER", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(view, "0 a castigat", " GAME OVER", JOptionPane.INFORMATION_MESSAGE);
         }
         else
         {
