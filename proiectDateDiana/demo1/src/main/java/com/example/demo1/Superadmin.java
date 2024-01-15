@@ -186,6 +186,7 @@ public class Superadmin
 
     public void BADSSUPADMINOnAction(ActionEvent e)throws SQLException{
         fereastraAdaugaDateSistem(id);
+        fereastraDatePersonaleAngajati(id);
     }
 
     public void fereastraAdaugaDateSistem(int id){
@@ -208,6 +209,7 @@ public class Superadmin
 
     public void BMDSSUPADMINOnAction(ActionEvent e)throws SQLException{
         fereastraModificaDateSistem(id);
+        fereastraDatePersonaleAngajati(id);
     }
 
     public void fereastraModificaDateSistem(int id){
@@ -218,6 +220,24 @@ public class Superadmin
             d.setID(id);
             Stage stageDate= new Stage();
             stageDate.setTitle("Modifica Date Sistem ");
+            stageDate.setScene(scene);
+
+            stageDate.show();
+
+        }catch(Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+    public void fereastraDatePersonaleAngajati(int id){
+        try{
+            FXMLLoader date = new FXMLLoader(com.example.demo1.HelloApplication.class.getResource("datePersonaleAngajati.fxml"));
+            Scene scene = new Scene(date.load(), 1150, 307);
+            DatePersonaleAngajati d = date.getController();
+            d.setID(id);
+            Stage stageDate= new Stage();
+            stageDate.setTitle("Date Personale Angajati");
             stageDate.setScene(scene);
 
             stageDate.show();

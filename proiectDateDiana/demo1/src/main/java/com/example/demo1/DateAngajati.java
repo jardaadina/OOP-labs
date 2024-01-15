@@ -21,6 +21,9 @@ public class DateAngajati {
         this.adresa=adresa;
     }
 
+    public DateAngajati(String userNume, String userPrenume, String userAdresa, String userOra, String userData) {
+    }
+
 
     public void setCNP(String CNP) {
         this.CNP = CNP;

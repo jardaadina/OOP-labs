@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.AdaugaDateSistem">
+<AnchorPane prefHeight="580.0" prefWidth="480.0" style="-fx-background-color: #e7f5fe;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.AdaugaDateSistem">
    <children>
       <Button fx:id="updateMDA" layoutX="312.0" layoutY="439.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #498fba;" text="ADAUGA" textFill="WHITE">
          <font>

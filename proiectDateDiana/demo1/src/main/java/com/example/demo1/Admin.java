@@ -1,5 +1,6 @@
 package com.example.demo1;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,8 +9,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class Admin {
 
@@ -186,6 +190,7 @@ public class Admin {
 
     public void BADSADMINOnAction(ActionEvent e)throws SQLException{
         fereastraAdaugaDateSistem(id);
+        fereastraDatePersonaleAngajati(id);
     }
 
     public void fereastraAdaugaDateSistem(int id){
@@ -208,6 +213,7 @@ public class Admin {
     public void BMDSADMINOnAction(ActionEvent e)throws SQLException{
         fereastraModificaDateSistem(id);
         fereastraDatePersonaleAngajati(id);
+
     }
 
     public void fereastraModificaDateSistem(int id){
@@ -231,7 +237,7 @@ public class Admin {
     public void fereastraDatePersonaleAngajati(int id){
         try{
             FXMLLoader date = new FXMLLoader(com.example.demo1.HelloApplication.class.getResource("datePersonaleAngajati.fxml"));
-            Scene scene = new Scene(date.load(), 1180, 120);
+            Scene scene = new Scene(date.load(), 1150, 307);
             DatePersonaleAngajati d = date.getController();
             d.setID(id);
             Stage stageDate= new Stage();
@@ -245,6 +251,4 @@ public class Admin {
             e.getCause();
         }
     }
-
-
 }

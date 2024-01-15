@@ -15,7 +15,7 @@
                <columns>
                   <TableColumn fx:id="tabelNume" prefWidth="75.0" style="-fx-background-color: #498fba;" text="NUME" />
                   <TableColumn fx:id="tabelPrenume" prefWidth="75.0" style="-fx-background-color: #498fba;" text="PRENUME" />
-                  <TableColumn fx:id="tabelEmail" prefWidth="104.0" style="-fx-background-color: #498fba;" text="TELEFON" />
+                  <TableColumn fx:id="telefon" prefWidth="104.0" style="-fx-background-color: #498fba;" text="TELEFON" />
                   <TableColumn fx:id="data" maxWidth="7000.0" minWidth="0.0" prefWidth="80.79998779296875" style="-fx-background-color: #498fba;" text="DATA" />
                   <TableColumn fx:id="ora" maxWidth="7000.0" minWidth="0.0" prefWidth="86.39999999999998" style="-fx-background-color: #498fba;" text="ORA" />
                   <TableColumn fx:id="medic" maxWidth="7000.0" minWidth="0.0" prefWidth="86.39999999999998" style="-fx-background-color: #498fba;" text="MEDIC" />
